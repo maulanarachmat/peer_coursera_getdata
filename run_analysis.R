@@ -112,3 +112,10 @@ activity_average <- alldata %>% group_by(actnames) %>% summarise_all(funs(if(is.
 # Create independent data for average of each subjects
 #######################################################################################################
 subjects_average <- alldata %>% group_by(subjects) %>% summarise_all(funs(if(is.numeric(.)) mean(., na.rm = TRUE) else first(.))) %>% select(-actnames, -actnumber)
+#######################################################################################################
+# VIEW THE DATA
+#######################################################################################################
+View(alldata)
+View(activity_average)
+View(subjects_average)  
+                                                                          
