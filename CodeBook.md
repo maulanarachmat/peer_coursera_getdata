@@ -1,4 +1,4 @@
------------------------------DATA DICTIONARY---------------------------------
+﻿-----------------------------DATA DICTIONARY---------------------------------
 
 Subjects
 		Tag Type
@@ -199,9 +199,21 @@ fBodyAccMag-mean()
 fBodyAccMag-std()
 		Standard deviation value of calculated Magnitude of Raw three-dimensional signal from Accelerometer on Body as frequency domain (after Fast Fourier Transform – FFT – was applied)
 			Numeric value
-fBodyBodyAccJerkMag-mean()  
-fBodyBodyAccJerkMag-std()   
-fBodyBodyGyroMag-mean()    
-fBodyBodyGyroMag-std()      
-fBodyBodyGyroJerkMag-mean() 
+fBodyBodyAccJerkMag-mean()
+		Mean value of calculated Magnitude of Jerk three-dimensional signal from Accelerometer on Body as frequency domain (after Fast Fourier Transform – FFT – was applied)
+			Numeric value
+fBodyBodyAccJerkMag-std()
+		Standard deviation value of calculated Magnitude of Jerk three-dimensional signal from Accelerometer on Body as frequency domain (after Fast Fourier Transform – FFT – was applied)
+			Numeric value
+fBodyBodyGyroMag-mean()
+		Mean value of calculated Magnitude of Raw three-dimensional signal from Gyroscope on Body as frequency domain (after Fast Fourier Transform – FFT – was applied)
+			Numeric value
+fBodyBodyGyroMag-std()
+		Standard deviation value of calculated Magnitude or Raw three-dimensional signal from Gyroscope on Body as frequency domain (after Fast Fourier Transform – FFT – was applied)
+			Numeric value
+fBodyBodyGyroJerkMag-mean()
+		Mean value of calculated Magnitude of Jerk three-dimensional signal from Gyroscope on Body as frequency domain (after Fast Fourier Transform – FFT – was applied)
+			Numeric value
 fBodyBodyGyroJerkMag-std()
+		Standard deviation value of calculated Magnitude of Jerk three-dimensional signal from Gyroscope on Body as frequency domain (after Fast Fourier Transform – FFT – was applied)
+			Numeric value
