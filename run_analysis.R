@@ -19,6 +19,8 @@ subtrain <- read.table("subject_train.txt")
 xtrain <- read.table("x_train.txt")
 ytrain <- read.table("y_train.txt")
 
+## Set working directory for your work
+setwd("~/Getdata/Peer/UCI HAR Dataset")
 # Collect and Clean data
 #########################################################################################################
 ## Test Data
@@ -105,10 +107,13 @@ train_data <- cbind(subactnamestrain, traintemp)
 ########################################################################################################
 alldata <- rbind(train_data,test_data)
 
-# Create independent data for average of each activity
+# Create independent data for average of each activity and each subjects and save it on txt file
 #######################################################################################################
-activity_average <- alldata %>% group_by(actnames) %>% summarise_all(funs(if(is.numeric(.)) mean(., na.rm = TRUE) else first(.))) %>% select(-subjects, -actnumber)
+act_sub_average <- alldata %>% group_by(subjects, actnames) %>% summarise_all(funs(if(is.numeric(.)) mean(., na.rm = TRUE) else first(.))) %>% select(-actnumber)
+write.table(act_sub_average, file = "average_subject.txt", row.names = FALSE)
 
-# Create independent data for average of each subjects
+# View the data
 #######################################################################################################
-subjects_average <- alldata %>% group_by(subjects) %>% summarise_all(funs(if(is.numeric(.)) mean(., na.rm = TRUE) else first(.))) %>% select(-actnames, -actnumber)
+View(alldata)
+View(act_sub_average)
+#######################################################################################################
