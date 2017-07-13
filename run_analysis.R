@@ -110,7 +110,7 @@ alldata <- rbind(train_data,test_data)
 # Create independent data for average of each activity and each subjects and save it on txt file
 #######################################################################################################
 act_sub_average <- alldata %>% group_by(subjects, actnames) %>% summarise_all(funs(if(is.numeric(.)) mean(., na.rm = TRUE) else first(.))) %>% select(-actnumber)
-write.table(act_sub_average, file = "average_subject.txt", row.names = FALSE)
+write.table(act_sub_average, file = "independent_average.txt", row.names = FALSE)
 
 # View the data
 #######################################################################################################
