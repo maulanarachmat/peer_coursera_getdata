@@ -60,6 +60,11 @@ In this step we merge the two datasets obtained from step 3.4 to get one dataset
 To get this independent tidy dataset I use operation summarise_all with the the result data from step 3, with function mean and group the result data on subjects and activities label (actnames).
 
 Finally, create the txt file from this data set using write.table to be save on current working directory.
+
+To be able to read result of independen data on txt file in R, use the following
+
+      data <- read.table(file_path, header = TRUE)
+      View(data)
   
 # Reference of Data
 Davide Anguita, Alessandro Ghio, Luca Oneto, Xavier Parra and Jorge L. Reyes-Ortiz. Human Activity Recognition on Smartphones using a Multiclass Hardware-Friendly Support Vector Machine. International Workshop of Ambient Assisted Living (IWAAL 2012). Vitoria-Gasteiz, Spain. Dec 2012
