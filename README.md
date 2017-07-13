@@ -61,7 +61,7 @@ To get this independent tidy dataset I use operation summarise_all with the the 
 
 Finally, create the txt file from this data set using write.table to be save on current working directory.
 
-To be able to read result of independen data on txt file in R, use the following
+To be able to read result of independent data on txt file in R, use the following
 
       data <- read.table(file_path, header = TRUE)
       View(data)
