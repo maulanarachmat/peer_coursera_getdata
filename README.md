@@ -32,7 +32,7 @@ In this part, I will explain how the script run_analysis.R works.
 3. Cleaning data
 
   3.1. Feature and x-test/train data
-    As We look into dimension of the data, we can see that feature is the header of x-test/train data. As feature data is in a vector of Row, I transform the x-test/train data, merge it, then transform it back and make the feature value as header of x-test/train data. Furthermore set the value of data frame as numeric to be able to calculate later.
+  As We look into dimension of the data, we can see that feature is the header of x-test/train data. As feature data is in a vector of Row, I transform the x-test/train data, merge it, then transform it back and make the feature value as header of x-test/train data. Furthermore set the value of data frame as numeric to be able to calculate later.
     
       NOTE : I use temp header and temp header for easy use to merge and understanding
       
