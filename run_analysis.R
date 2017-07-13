@@ -20,7 +20,7 @@ xtrain <- read.table("x_train.txt")
 ytrain <- read.table("y_train.txt")
 
 ## Set working directory for your work
-setwd("~/Getdata/Peer/UCI HAR Dataset")
+setwd("~/GitHub/peer_coursera_getdata")
 # Collect and Clean data
 #########################################################################################################
 ## Test Data
